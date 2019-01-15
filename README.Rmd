@@ -7,6 +7,14 @@ output:
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
 # Overview
 A repo from the WFT-workshop at RStudio Conf 2019 with Jenny Bryan and Jim Hester
 
@@ -25,3 +33,12 @@ This is an edit
 
 Created on `r Sys.Date()` by [Rmarkdown](https://github.com/rstudio/rmarkdown)
 (v`r utils::packageVersion("rmarkdown")`) and `r R.version$version.string`. 
+
+<details>
+
+<summary>Session info</summary>
+```{r}
+devtools::session_info()
+```
+
+</details>
