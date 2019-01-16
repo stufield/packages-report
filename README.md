@@ -21,7 +21,7 @@ This is an edit
 
 -----
 
-Created on 2019-01-15 by
+Created on 2019-01-16 by
 [Rmarkdown](https://github.com/rstudio/rmarkdown) (v1.11) and R version
 3.5.1 (2018-07-02).
 
@@ -41,7 +41,7 @@ devtools::session_info()
 #>  collate  en_US.UTF-8                 
 #>  ctype    en_US.UTF-8                 
 #>  tz       America/Chicago             
-#>  date     2019-01-15                  
+#>  date     2019-01-16                  
 #> 
 #> ─ Packages ──────────────────────────────────────────────────────────────
 #>  package     * version date       lib source        

@@ -1,9 +1,7 @@
 
-datafiles <- fs::dir_ls(here::here("data"))
-plotfiles <- fs::dir_ls(here::here("figs"))
-
 dirs <- c(here::here("data"), here::here("figs")) %>%
-  purrr::keep(., fs::dir_exists(.))
-#purrr::flatten_chr()
-fs::dir_ls(dirs)
-fs::file_delete(files)
+  purrr::keep(fs::dir_exists)
+purrr::map(dirs, fs::dir_ls) %>%
+  purrr::flatten_chr() %>%
+  unname() %>%
+  fs::file_delete()
