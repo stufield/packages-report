@@ -29,8 +29,6 @@ This is an edit
 1. Eucatastrophe is one of the 11 fav words
 
 
-## Lying about Git
-
 -------------------------
 
 Created on `r Sys.Date()` by [Rmarkdown](https://github.com/rstudio/rmarkdown)
