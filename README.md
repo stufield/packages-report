@@ -19,6 +19,10 @@ This is an edit
 1.  This is how you make a numbered list
 2.  Eucatastrophe is one of the 11 fav words
 
+## This is a setup
+
+Commit message is of WIP is “work in progress”
+
 -----
 
 Created on 2019-01-16 by
@@ -47,7 +51,7 @@ devtools::session_info()
 #>  package     * version date       lib source        
 #>  assertthat    0.2.0   2017-04-11 [1] CRAN (R 3.5.0)
 #>  backports     1.1.3   2018-12-14 [1] CRAN (R 3.5.0)
-#>  callr         3.1.0   2018-12-10 [1] CRAN (R 3.5.0)
+#>  callr         3.1.1   2018-12-21 [1] CRAN (R 3.5.0)
 #>  cli           1.0.1   2018-09-25 [1] CRAN (R 3.5.0)
 #>  crayon        1.3.4   2017-09-16 [1] CRAN (R 3.5.0)
 #>  desc          1.2.0   2018-05-01 [1] CRAN (R 3.5.0)
@@ -64,7 +68,7 @@ devtools::session_info()
 #>  pkgload       1.0.2   2018-10-29 [1] CRAN (R 3.5.0)
 #>  prettyunits   1.0.2   2015-07-13 [1] CRAN (R 3.5.0)
 #>  processx      3.2.1   2018-12-05 [1] CRAN (R 3.5.0)
-#>  ps            1.2.1   2018-11-06 [1] CRAN (R 3.5.0)
+#>  ps            1.3.0   2018-12-21 [1] CRAN (R 3.5.0)
 #>  R6            2.3.0   2018-10-04 [1] CRAN (R 3.5.0)
 #>  Rcpp          1.0.0   2018-11-07 [1] CRAN (R 3.5.0)
 #>  remotes       2.0.2   2018-10-30 [1] CRAN (R 3.5.0)

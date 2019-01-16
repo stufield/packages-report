@@ -28,6 +28,8 @@ This is an edit
 1. This is how you make a numbered list
 1. Eucatastrophe is one of the 11 fav words
 
+## This is a setup
+Commit message is of WIP is "work in progress"
 
 -------------------------
 
