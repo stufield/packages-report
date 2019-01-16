@@ -1,7 +1,9 @@
 cool\_func.R
 ================
 sfield
-Tue Jan 15 17:02:12 2019
+Wed Jan 16 17:28:15 2019
+
+Making a change in the “past branch” to cherry pick @noRd
 
 ``` r
 func <- function(x) {
