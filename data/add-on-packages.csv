@@ -1,6 +1,7 @@
 Package,Built
 abind,3.5.0
 acepack,3.5.0
+askpass,3.5.2
 assertthat,3.5.0
 backports,3.5.0
 base64enc,3.5.0
@@ -42,6 +43,8 @@ colourpicker,3.5.0
 combinat,3.5.0
 commonmark,3.5.0
 config,3.5.0
+countdeps,3.5.1
+covr,3.5.0
 cowsay,3.5.0
 crayon,3.5.0
 crosstalk,3.5.0
@@ -82,6 +85,7 @@ fpc,3.5.0
 fs,3.5.0
 futile.logger,3.5.0
 futile.options,3.5.0
+gapminder,3.5.0
 gbm,3.5.0
 gclus,3.5.0
 gdata,3.5.0
@@ -104,6 +108,7 @@ heatmaply,3.5.0
 here,3.5.0
 hexbin,3.5.0
 highlight,3.5.0
+highlite,3.5.1
 highr,3.5.0
 Hmisc,3.5.0
 hms,3.5.0
@@ -117,6 +122,7 @@ igraph,3.5.0
 ini,3.5.0
 inline,3.5.0
 ipred,3.5.0
+itdepends,3.5.1
 iterators,3.5.0
 jsonlite,3.5.0
 kableExtra,3.5.0
@@ -137,8 +143,10 @@ limma,3.5.1
 lintr,3.5.0
 lme4,3.5.0
 loo,3.5.0
+lookup,3.5.1
 lsei,3.5.0
 lubridate,3.5.0
+magick,3.5.0
 magrittr,3.5.0
 manipulateWidget,3.5.0
 maptools,3.5.0
@@ -225,6 +233,7 @@ rematch2,3.5.0
 remotes,3.5.0
 reprex,3.5.0
 repurrrsive,3.5.0
+requirements,3.5.1
 reshape,3.5.0
 reshape2,3.5.0
 reticulate,3.5.0
@@ -293,6 +302,7 @@ stringi,3.5.0
 stringr,3.5.0
 styler,3.5.0
 survivalROC,3.5.0
+sys,3.5.0
 TeachingDemos,3.5.0
 tensorflow,3.5.0
 testthat,3.5.0
@@ -312,6 +322,7 @@ TSP,3.5.0
 usethis,3.5.0
 utf8,3.5.0
 varSelRF,3.5.0
+vctrs,3.5.0
 VennDiagram,3.5.0
 viridis,3.5.0
 viridisLite,3.5.0
@@ -327,5 +338,6 @@ xtable,3.5.0
 xts,3.5.0
 yaml,3.5.0
 yardstick,3.5.0
+zeallot,3.5.0
 zip,3.5.0
 zoo,3.5.0

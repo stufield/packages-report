@@ -13,56 +13,39 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 library(tidyverse)
+library(here)
 ```
 
 ---------
 
-# Overview
+# WTF Packages Report
 A repo from the WFT-workshop at RStudio Conf 2019 with Jenny Bryan and Jim Hester
+that contains a simple report describing the packages I `r Sys.getenv("USER")`
+have on my machine.
 
-## Activities
+## Polished `Pages` URL here
+[]()
 
-* Combine your work analyzing your R packages and what we've learned re: GitHub
-  and R Markdown
-* This `README.Rmd` gives a scaffold for using the work you did earlier to 
-  make a little report.
-* Given our previous work, I'm using pre-computed results and including a 
-  pre-made figure, leaving the R code down in scripts below `R/`. But know
-  that, in other contexts, you could inline all that code in chunks here.
-  Depends on downstream usage and the project context.
-* Locally, do `README.Rmd` -> `README.md` with the "Knit" button or 
-  via `rmarkdown::render("README.Rmd")`. Commit both.
-* I presume you are hooked up to GitHub remote repo, covered in
-  [Existing project, GitHub last](https://happygitwithr.com/existing-github-last.html).
-  Summary:
-  + Consider the convenience function `usethis::use_github()`. Or to do by hand:
-  + Create a similarly-named repo on GitHub.
-  + Add it to the local repo as the `origin` remote:
-    `git remote add origin https://github.com/YOU/REPO.git`.
-  + Push and cement the branch tracking relationship:
-    `git push --set-upstream origin master`.
-* Push! Now your README is an excellent welcome mat and summary of
-  your project.
-* On GitHub, in *Settings*, turn on GitHub Pages. Visit the given
-  URL for an even more polished report of your project. It may take a
-  few minutes to show up/update. Record that as the URL for your repo.
+### Recall what this does
+```
+git push --set-upstream origin master
+```
 
-
+## Analysis
 ```{r, echo = FALSE}
 # here are the add-on packages
-here::here("data", "add-on-packages.csv") %>%
-  readr::read_csv() -> add_ons
+add_ons <- here("data", "add-on-packages.csv") %>% read_csv()
 add_ons
 ```
 
 I have `r nrow(add_ons)` add-on packages installed.
 
-Here's how they break down in terms of which version of R they were built under, which is related to how recently they were updated on CRAN.
+Here's how they break down in terms of which version of R they were built 
+under, which is related to how recently they were updated on `CRAN`.
 
 ```{r, echo = FALSE, message = FALSE}
 # here are the frequencies of the add-on packages
-here::here("data", "add-on-packages-freqtable.csv") %>%
-  readr::read_csv()
+here("data", "add-on-packages-freqtable.csv") %>% read_csv()
 ```
 
 ![](figs/built-barchart.png)
@@ -70,9 +53,16 @@ here::here("data", "add-on-packages-freqtable.csv") %>%
 
 ### Flow of the analysis
 
-* If you have time, document the analysis works, using internal links.
-* If you created some sort of controller script, describe that here.
+Run [R/make-clean.R](R/make-clean.R) to clean out downstream products, i.e.
+directories containing the generated `*.csv` and `*.png` files.
 
+Run [R/driver.R](R/driver.R) to re-run the analysis and re-render this `README`.
+
+| Input                         | Script                        | Output                                            |
+|-------------------------------|-------------------------------|---------------------------------------------------|
+|                               | [R/01_write-installed-packages.R](R/01_write-installed-packages.R) | [data/installed-packages.csv](data/installed-packages.csv)                            |
+| [data/installed-packages.csv](data/installed-packages.csv)        | [R/02_wrangle-packages.R](R/02_wrangle-packages.R)         | [data/add-on-packages.csv](data/add-on-packages.csv)<br>[data/add-on-packages-freqtable.csv](data/add-on-packages-freqtable.csv) |
+| [data/add-on-packages-freqtable.csv](data/add-on-packages-freqtable.csv) | [R/03_barchart-packages-built.R](R/03_barchart-packages-built.R)  | [figs/built-barchart.png](figs/built-barchart.png)                                |
 
 
 -----
@@ -86,5 +76,7 @@ devtools::session_info()
 
 </details>
 
-See <https://github.com/jennybc/wtf-packages-report-EXAMPLE> for a fully realized example.
+-------------
 
+Created on `r Sys.Date()` by [Rmarkdown](https://github.com/rstudio/rmarkdown)
+(v`r utils::packageVersion("rmarkdown")`) and `r R.version$version.string`.
