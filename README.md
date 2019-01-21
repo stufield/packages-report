@@ -9,9 +9,9 @@ A repo from the WFT-workshop at RStudio Conf 2019 with Jenny Bryan and
 Jim Hester that contains a simple report describing the packages I
 sfield have on my machine.
 
-## Polished `Pages` URL here
+## Polished `GitHub Pages` URL here
 
-[]()
+<https://stufield.github.io/packages-report/>
 
 ### Recall what this does
 
