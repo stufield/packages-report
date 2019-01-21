@@ -45,12 +45,11 @@ Here’s how they break down in terms of which version of R they were
 built under, which is related to how recently they were updated on
 `CRAN`.
 
-    #> # A tibble: 3 x 3
-    #>   Built     n   prop
-    #>   <chr> <dbl>  <dbl>
-    #> 1 3.5.0   307 0.898 
-    #> 2 3.5.1    31 0.0906
-    #> 3 3.5.2     4 0.0117
+| Built |   n |  prop |
+| :---- | --: | ----: |
+| 3.5.0 | 307 | 0.898 |
+| 3.5.1 |  31 | 0.091 |
+| 3.5.2 |   4 | 0.012 |
 
 ![](figs/built-barchart.png)
 
@@ -93,7 +92,7 @@ devtools::session_info()
 #>  assertthat    0.2.0   2017-04-11 [1] CRAN (R 3.5.0)
 #>  backports     1.1.3   2018-12-14 [1] CRAN (R 3.5.0)
 #>  bindr         0.1.1   2018-03-13 [1] CRAN (R 3.5.0)
-#>  bindrcpp      0.2.2   2018-03-29 [1] CRAN (R 3.5.0)
+#>  bindrcpp    * 0.2.2   2018-03-29 [1] CRAN (R 3.5.0)
 #>  broom         0.5.1   2018-12-05 [1] CRAN (R 3.5.0)
 #>  callr         3.1.1   2018-12-21 [1] CRAN (R 3.5.0)
 #>  cellranger    1.1.0   2016-07-27 [1] CRAN (R 3.5.0)
@@ -114,6 +113,7 @@ devtools::session_info()
 #>  gtable        0.2.0   2016-02-26 [1] CRAN (R 3.5.0)
 #>  haven         2.0.0   2018-11-22 [1] CRAN (R 3.5.0)
 #>  here        * 0.1     2017-05-28 [1] CRAN (R 3.5.0)
+#>  highr         0.7     2018-06-09 [1] CRAN (R 3.5.0)
 #>  hms           0.4.2   2018-03-10 [1] CRAN (R 3.5.0)
 #>  htmltools     0.3.6   2017-04-28 [1] CRAN (R 3.5.0)
 #>  httr          1.4.0   2018-12-11 [1] CRAN (R 3.5.0)

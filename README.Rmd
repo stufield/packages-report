@@ -45,7 +45,10 @@ under, which is related to how recently they were updated on `CRAN`.
 
 ```{r, echo = FALSE, message = FALSE}
 # here are the frequencies of the add-on packages
-here("data", "add-on-packages-freqtable.csv") %>% read_csv()
+here("data", "add-on-packages-freqtable.csv") %>% 
+  read_csv() %>% 
+  mutate(prop = round(prop, 3)) %>% 
+  knitr::kable()
 ```
 
 ![](figs/built-barchart.png)
